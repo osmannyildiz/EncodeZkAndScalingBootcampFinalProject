@@ -25,7 +25,7 @@ async function generateRiddle() {
     );
   });
   const answer = await new Promise((resolve) => {
-    reader.question("Enter the riddle answer: ", resolve);
+    reader.question("👉 Enter the riddle answer: ", resolve);
   });
   reader.close();
 
@@ -96,7 +96,7 @@ async function generateRiddle() {
   );
 
   console.log(
-    "✅ Success! Now you can share the 'dist' folder and challenge people to solve your riddle."
+    "\n✅ Success! Now you can share the 'dist' folder and challenge people to solve your riddle."
   );
 }
 
