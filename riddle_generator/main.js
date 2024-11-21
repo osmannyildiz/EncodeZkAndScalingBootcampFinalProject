@@ -19,7 +19,10 @@ async function generateRiddle() {
     output: process.stdout,
   });
   const question = await new Promise((resolve) => {
-    reader.question("Enter the riddle question: ", resolve);
+    reader.question(
+      "👉 Enter the riddle question (use \\n for new lines):\n",
+      resolve
+    );
   });
   const answer = await new Promise((resolve) => {
     reader.question("Enter the riddle answer: ", resolve);

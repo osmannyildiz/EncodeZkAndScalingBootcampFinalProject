@@ -6,14 +6,16 @@ This project aims to make it possible for users to enjoy ZK without the knowledg
 
 ## Buidlers
 
+- [ahalsudev](https://github.com/ahalsudev)
 - [osmannyildiz](https://github.com/osmannyildiz)
+- [raahil190](https://github.com/raahil190)
 
 ## How To Use
 
 ### Prerequisites
 
 - Circom
-- SnarkJS
+- snarkJS
 
 Find the installation instructions [here](https://docs.circom.io/getting-started/installation/).
 
@@ -40,4 +42,10 @@ npm start
 
 ### Verify witness file
 
-TODO
+`TODO`: We'll add a script to automate this. For now you can do it manually:
+
+```sh
+cd ..
+snarkjs groth16 prove circom/ceremony/riddle_checker_0001.zkey dist/witness.wtns proof.json public.json
+snarkjs groth16 verify circom/ceremony/verification_key.json public.json proof.json
+```

@@ -28,7 +28,7 @@ async function startLoop() {
   while (true) {
     // Take answer from console
     const answer = await new Promise((resolve) => {
-      reader.question("Enter your answer: ", resolve);
+      reader.question("👉 Enter your answer: ", resolve);
     });
 
     // Encode the answer
